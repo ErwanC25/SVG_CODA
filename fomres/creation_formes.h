@@ -1,0 +1,5 @@
+#ifndef SVG_CREATION_INTERNE_H
+#define SVG_CREATION_INTERNE_H
+
+
+#endif
