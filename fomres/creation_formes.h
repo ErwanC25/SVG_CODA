@@ -1,8 +1,10 @@
 #ifndef SVG_CREATION_INTERNE_H
 #define SVG_CREATION_INTERNE_H
 
-#include "svg_structure.h"
+
 #include <stddef.h>
+
+#include "svg_structure.h"
 
 int ajouter_forme(Forme_t *forme, FormeType_t type, float x, float y, const char fill_color, const char *stroke_color, float stroke_width);
 
