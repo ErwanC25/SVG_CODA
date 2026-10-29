@@ -3,7 +3,7 @@
 
 #include <stddef.h>
 
-typedef struct Formes_s Formes_t;
+typedef struct Forme_s Forme_t;
 
 typedef struct Point_s {
     int x;
@@ -40,6 +40,6 @@ struct Shape_s {
     struct Forme_s *next;
 };
 
-extern Forme_t *head_formes;
+extern Forme_t *head_forme;
 
 #endif
