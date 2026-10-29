@@ -10,7 +10,7 @@ typedef struct Point_s {
     int y;
 } Point_t;
 
-typedef enum TypeForme_e {
+typedef enum FormeType_e {
     FORME_INVALIDE = -1,
     FORME_CERLCE,
     FORME_ELLIPSE,
@@ -21,7 +21,7 @@ typedef enum TypeForme_e {
     FORME_POLYGON,
     FORME_PATH,
     FORME_GROUP,
-} TypeForme_t;
+} FormeType_t;
 
 struct Shape_s {
     int id;
