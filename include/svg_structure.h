@@ -23,6 +23,18 @@ typedef enum FormeType_e {
     FORME_GROUP,
 } FormeType_t;
 
+typedef union DataForme_u {
+    Cerlce_t cercle;
+    Ellipse_t ellipse;
+    Rectangle_t rectangle;
+    Carre_t carre;
+    Ligne_t ligne;
+    Polyligne polyligne;
+    Polygon_t polygon;
+    Path_t path;
+    Group_t group;
+} DataForme_t;
+
 struct Shape_s {
     int id;
     FormeType_t type;
@@ -35,7 +47,7 @@ struct Shape_s {
     int rotation;
     int flip x;
     int flip y;
-    ShapeData_t data;
+    DataForme_t data;
 
     struct Forme_s *next;
 };
