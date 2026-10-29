@@ -10,4 +10,8 @@ int create_ellipse(float x, float y, float radius_x, float radius_y, const char 
 int creat_carre(float x, float y, float side_length, const char *fill_color, const char *stroke_color, float stroke_width);
 int creat_rectangle();
 
+void free_formes(void);
+void reset_id_counter(void);
+void sync_id_counter(void);
+
 #endif
