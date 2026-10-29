@@ -9,9 +9,18 @@ const char *BRIGHT_BLUE = "\033[1;34m";
 const char *BOLD = "\033[1m";
 const char *RESET = "\033[0m";
 
-int terminal() {
+int menu_principal() {
     int choix = -1;
+    char last_path[512] = "";
 
+    if (atexit(free_shapes) != 0) {
+        printf("Impossible d’enregistrer le nettoyage de la mémoire\n");
+        return EXIT_FAILURE;
+    }
+    load_last_path(last_path);
+
+
+    printf("\nEditeur SVG en ligne de commande");
     while (choix != 0) {
         printf("%sVotre choix\n", BOLD, RESET);
         printf("%s1 : Créer une forme\n", BRIGHT_BLUE, RESET);
@@ -44,4 +53,9 @@ int terminal() {
         }
 
     }
+}
+
+
+int menu_creation_forme() {
+    
 }
