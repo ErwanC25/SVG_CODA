@@ -42,3 +42,4 @@ struct Shape_s {
 
 extern Forme_t *head_formes;
 
+#endif
