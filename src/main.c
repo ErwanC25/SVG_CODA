@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "ui_interne.h"
-
 const char *BRIGHT_RED = "\033[1;31m";
 const char *BRIGHT_YELLOW = "\033[1;33m";
 const char *BRIGHT_BLUE = "\033[1;34m";
@@ -22,7 +20,7 @@ int main(void) {
 
         printf("\nEditeur SVG en ligne de commande");
         while (choix != 0) {
-            printf("%sVotre choix\n", BOLD, RESET);
+            printf("%Menu principale\n", BOLD, RESET);
             printf("%s1 : Créer une forme\n", BRIGHT_BLUE, RESET);
             printf("%s2 : Editer forme / groupe\n");
             printf("%s3 : Gérer les fichiers SVG\n");

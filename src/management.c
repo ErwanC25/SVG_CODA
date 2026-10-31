@@ -5,6 +5,34 @@
 #include "svg_formes.h"
 #include "creation_formes.h"
 
+
+static const char *forme_type_nom(FormeType_t type)
+{
+    switch (type)
+    {
+        case FORME_CIRCLE:
+            return "cercle";
+        case FORME_ELLIPSE:
+            return "ellipse";
+        case FORME_RECTANGLE:
+            return "rectangle";
+        case FORME_SQUARE:
+            return "carré";
+        case FORME_LINE:
+            return "ligne";
+        case FORME_POLYLINE:
+            return "polyligne";
+        case FORME_POLYGON:
+            return "polygon";
+        case FORME_PATH:
+            return "path";
+        case FORME_GROUP:
+            return "group";
+        default:
+            return "shape";
+    }
+}
+
 static void free_forme(Forme_t *forme) {
     if (forme -> type == FORME_GROUP) {
         Forme_t *child = forme -> data.group.chlidren;
